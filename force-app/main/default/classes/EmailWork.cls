@@ -6,6 +6,7 @@ public with sharing class EmailWork {
         mail.setUseSignature(false);
         mail.setTemplateId(template.Id);
         mail.setTargetObjectId(reciverId);
+        mail.setPlainTextBody(message);
         return mail;
     }
 }
