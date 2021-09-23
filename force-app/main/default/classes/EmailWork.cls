@@ -4,6 +4,7 @@ public with sharing class EmailWork {
         mail.setSenderDisplayName('God');  
         mail.setBccSender(false);
         mail.setUseSignature(false);
+        mail.setSaveAsActivity(false);
         mail.setTemplateId(template.Id);
         mail.setTargetObjectId(reciverId);
         mail.setPlainTextBody(message);

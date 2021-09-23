@@ -1,5 +1,5 @@
 public with sharing class NewRecordsForAdmin implements Schedulable {
-    public void execute(SchedulableContext ctx) {
+    public void execute(SchedulableContext context) {
         User[] admins = [SELECT Id FROM User WHERE ProfileId = '00e5g000004ehcwAAA'];
 
         System.Messaging.reserveSingleEmailCapacity(admins.size());

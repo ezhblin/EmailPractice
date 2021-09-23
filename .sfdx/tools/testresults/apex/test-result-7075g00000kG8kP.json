@@ -1,0 +1,154 @@
+{
+  "summary": {
+    "outcome": "Failed",
+    "testsRan": 1,
+    "passing": 0,
+    "failing": 1,
+    "skipped": 0,
+    "passRate": "0%",
+    "failRate": "100%",
+    "skipRate": "0%",
+    "testStartTime": "Thu Sep 23 2021 10:32:38",
+    "testExecutionTimeInMs": 367,
+    "testTotalTimeInMs": 367,
+    "commandTimeInMs": 997,
+    "hostname": "https://mindful-raccoon-ly79nw-dev-ed.my.salesforce.com",
+    "orgId": "00D5g00000BlRDREA3",
+    "username": "emshemetov@mindful-raccoon-ly79nw.com",
+    "testRunId": "7075g00000kG8kP",
+    "userId": "0055g00000CxAcuAAF",
+    "totalLines": 23,
+    "coveredLines": 23,
+    "testRunCoverage": "100%",
+    "orgWideCoverage": "9%"
+  },
+  "tests": [
+    {
+      "id": "07M5g000001tx21EAA",
+      "queueItemId": "7095g000000tIT0AAM",
+      "stackTrace": "Class.fycer.NewRecordsForAdmin.execute: line 24, column 1",
+      "message": "System.EmailException: SendEmail failed. First exception on row 0; first error: INVALID_SAVE_AS_ACTIVITY_FLAG, saveAsActivity must be false when sending mail to users.: [saveAsActivity, true]",
+      "asyncApexJobId": "7075g00000kG8kPAAS",
+      "methodName": "executeTest",
+      "outcome": "Fail",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01p5g00000VjuYiAAJ",
+        "name": "NewRecordsForAdminTest",
+        "namespacePrefix": "fycer",
+        "fullName": "fycer__NewRecordsForAdminTest"
+      },
+      "runTime": 367,
+      "testTimestamp": "2021-09-23T07:32:39.000+0000",
+      "fullName": "fycer__NewRecordsForAdminTest.executeTest",
+      "diagnostic": {
+        "exceptionMessage": "System.EmailException: SendEmail failed. First exception on row 0; first error: INVALID_SAVE_AS_ACTIVITY_FLAG, saveAsActivity must be false when sending mail to users.: [saveAsActivity, true]",
+        "exceptionStackTrace": "Class.fycer.NewRecordsForAdmin.execute: line 24, column 1",
+        "className": "fycer",
+        "compileProblem": "",
+        "lineNumber": 24,
+        "columnNumber": 1
+      },
+      "perClassCoverage": [
+        {
+          "apexClassOrTriggerName": "EmailWork",
+          "apexClassOrTriggerId": "01p5g00000VZVnGAAX",
+          "apexTestClassId": "01p5g00000VjuYiAAJ",
+          "apexTestMethodName": "executeTest",
+          "numLinesCovered": 9,
+          "numLinesUncovered": 0,
+          "percentage": "100%",
+          "coverage": {
+            "coveredLines": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ],
+            "uncoveredLines": []
+          }
+        },
+        {
+          "apexClassOrTriggerName": "NewRecordsForAdmin",
+          "apexClassOrTriggerId": "01p5g00000VZKN8AAP",
+          "apexTestClassId": "01p5g00000VjuYiAAJ",
+          "apexTestMethodName": "executeTest",
+          "numLinesCovered": 14,
+          "numLinesUncovered": 0,
+          "percentage": "100%",
+          "coverage": {
+            "coveredLines": [
+              2,
+              3,
+              5,
+              6,
+              8,
+              9,
+              12,
+              13,
+              14,
+              15,
+              16,
+              20,
+              21,
+              24
+            ],
+            "uncoveredLines": []
+          }
+        }
+      ]
+    }
+  ],
+  "codecoverage": [
+    {
+      "apexId": "01p5g00000VZVnGAAX",
+      "name": "EmailWork",
+      "type": "ApexClass",
+      "numLinesCovered": 9,
+      "numLinesUncovered": 0,
+      "percentage": "100%",
+      "coveredLines": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "uncoveredLines": []
+    },
+    {
+      "apexId": "01p5g00000VZKN8AAP",
+      "name": "NewRecordsForAdmin",
+      "type": "ApexClass",
+      "numLinesCovered": 14,
+      "numLinesUncovered": 0,
+      "percentage": "100%",
+      "coveredLines": [
+        2,
+        3,
+        5,
+        6,
+        8,
+        9,
+        12,
+        13,
+        14,
+        15,
+        16,
+        20,
+        21,
+        24
+      ],
+      "uncoveredLines": []
+    }
+  ]
+}
